@@ -4,10 +4,9 @@
 function selectOption(option) {
     // Check which option was clicked
     if (option === 'yes') {
-        flashRainbowColors(function() {
             document.getElementById('question').style.display = 'none'; // Hide the question
             displayCatHeart(); // Display the cat-heart.gif
-        });
+    
     } else if (option === 'no') {
         // Change text on the "No" button to "You sure?"
         document.getElementById('no-button').innerText = 'You sure?'; 
@@ -22,14 +21,14 @@ function selectOption(option) {
     }
 }
 
-// Function to display the cat.gif initially
-function displaycat.gif() {
+// Function to display the cat.jpeg initially
+function displaycat.jpeg() {
     // Get the container where the image will be displayed
     var imageContainer = document.getElementById('image-container');
     // Create a new Image element for the cat
     var catImage = new Image();
     // Set the source (file path) for the cat image
-    catImage.src = 'cat.gif.jpeg'; // Assuming the cat image is named "cat.gif"
+    catImage.src = 'cat.jpeg'; // Assuming the cat image is named "cat.jpeg"
 }
 
 // Function to display the cat-heart.gif
@@ -52,5 +51,5 @@ function displayCatHeart() {
     };
 }
 
-// Display the cat.gif.jpeg initially
-displayCat.gif();
+// Display the cat.jpeg initially
+displayCat.jpeg);
